@@ -1,0 +1,3 @@
+[submodule "book-server"]
+	path = book-server
+	url = https://github.com/divyanjalee200178/Library-System-Book-Service.git
