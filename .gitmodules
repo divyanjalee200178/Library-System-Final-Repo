@@ -7,3 +7,12 @@
 [submodule "user-server"]
 	path = user-server
 	url = https://github.com/divyanjalee200178/Library-System-User-Service.git
+[submodule "service"]
+	path = service
+	url = https://github.com/divyanjalee200178/Library-System-Services.git
+[submodule "platform"]
+	path = platform
+	url = https://github.com/divyanjalee200178/Library-System-Platform.git
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/divyanjalee200178/Library-System-Frontend.git
