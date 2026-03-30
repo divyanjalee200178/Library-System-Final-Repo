@@ -1,0 +1,60 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: book-server
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/library_book?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+    username: root
+    password: Ijse@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  config:
+    import: "optional:configserver:"
+
+  cloud:
+    config:
+      uri: http://localhost:9000
+
+  servlet:
+    multipart:
+      max-file-size: 10MB      # <-- Max size per file
+      max-request-size: 20MB   # <-- Max total request size
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+
+  instance:
+    prefer-ip-address: true
+
+app:
+  storage:
+    path: ./uploads           # <-- Directory where images will be stored
+#
+#spring:
+#  application:
+#    name: book-server
+#
+#  profiles:
+#    active: dev
+#
+#  config:
+#    import: "optional:configserver:http://localhost:9000"
+#
+#  cloud:
+#    config:
+#      uri: http://localhost:9000

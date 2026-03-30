@@ -1,0 +1,28 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/library_user
+    username: postgres
+    password: Indu2001
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update   # automatically creates tables
+    show-sql: true
+  config:
+    import: "optional:configserver:"  # optional
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
