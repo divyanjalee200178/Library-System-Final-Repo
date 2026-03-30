@@ -7,3 +7,6 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/divyanjalee200178/Library-System-Frontend.git
+[submodule "frontendm"]
+	path = frontendm
+	url = https://github.com/divyanjalee200178/Library-System-Frontend.git
