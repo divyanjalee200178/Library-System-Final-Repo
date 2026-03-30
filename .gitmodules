@@ -1,0 +1,9 @@
+[submodule "service"]
+	path = service
+	url = https://github.com/divyanjalee200178/Library-System-Services.git
+[submodule "platform"]
+	path = platform
+	url = https://github.com/divyanjalee200178/Library-System-Platform.git
+[submodule "frontendmm"]
+	path = frontendmm
+	url = https://github.com/divyanjalee200178/Library-System-Frontend.git
