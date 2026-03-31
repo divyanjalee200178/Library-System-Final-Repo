@@ -10,7 +10,7 @@ Library-System-Book-Service    = https://github.com/divyanjalee200178/Library-Sy
 
 Library-System-Lending-Service = https://github.com/divyanjalee200178/Library-System-Lending-Service.git
 
-Library-System-Configuration   = https://github.com/divyanjalee200178/Library-System-Configuration.git
+Library-System-Configuration   = [https://github.com/divyanjalee200178/Library-System-Configuration.git](https://github.com/divyanjalee200178/Library-System-Configuration-Main.git
 
 Library-System-Api-Gateway     = https://github.com/divyanjalee200178/Library-System-Api-Gateway.git
 
